@@ -1,0 +1,8 @@
+1:ldmddkdk:Dog:none:5-10 years:Male:Yes:26mjl02@gmail.com:
+2:Dog:none:0-4 years:Male:Yes:
+3:Dog:none:5-10 years:Male:No:
+4:Dog:none:5-10 years:Male:Yes:
+5:Dog::0-4 years:Female:No:
+6:unknown:none:0-4 years:unknown:unknown:
+7:Dog:none:0-4 years:Male:Yes:
+8:Cat:none:0-4 years:Female:No:My dog is strong

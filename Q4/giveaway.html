@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="question8.css">
+    <title>Question 8</title>
+</head>
+<body>
+
+    <nav class="sidemenu">
+        <ul>
+            <li><a href="Q8.html">Home</a></li>
+            <li><a href="find.html">Find a dog/cat</a></li>
+            <li><a href="DogCare.html">Dog Care</a></li>
+            <li><a href="CatCare.html">Cat Care</a></li>
+            <li><a href="giveaway.html">Have a pet to give away</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="create.html">Create Account</a></li>
+        </ul>
+    </nav>
+
+    <form action="giveAPet" method="post">
+        <h1 id="header">Have a pet to GiveAway?</h1>
+        <hr>
+        <h1 id="currentTime"> . </h1>  
+    
+        <div class="content">
+            <p>Please fill out this form if you have a pet to give away.</p>
+            <div class="findform">
+                <label>
+                    First Name
+                    <input id="fn" type="text" name="firstname" required />
+                </label>
+                <br/> 
+                <label>
+                    Last Name
+                    <input id="ln" type="text" name="lastname" required/>
+                </label>
+                <br/>
+                <label>
+                    Email
+                    <input id="em" type="email" name="email" required/>
+                </label>
+                <br/>
+                <label>
+                    Type of Pet: <br>
+                    <input type="radio" name="givePet" value="Dog" required/> Dog
+                </label>
+                <label>
+                    <input type="radio" name="givePet" value="Cat" /> Cat
+                </label>
+                <br/>
+                <label>
+                    Breed: <br/>
+                    <input type="checkbox" name="breed2[]" value="GermanShepherd" /> German Shepherd
+                </label>
+                <label>
+                    <input type="checkbox" name="breed2[]" value="BullDog" /> Bull Dog
+                </label>
+                <label>
+                    <input type="checkbox" name="breed2[]" value="Poodle" /> Poodle
+                </label> 
+                <label>
+                    <input type="checkbox" name="breed2[]" value="Persian" /> Persian
+                </label>
+                <label>
+                    <input type="checkbox" name="breed2[]" value="Siamese" /> Siamese
+                </label>
+                <label>
+                    <input type="checkbox" name="breed2[]" value="Sphynx" /> Sphynx
+                </label>
+                <label>
+                    <input type="checkbox" name="breed2[]" value="other" /> Other
+                </label>
+                <br/><br/>
+                Age of pet?
+                <select name="age" size="1">
+                    <option>0-4 years</option>
+                    <option>5-10 years</option>
+                    <option>Over 10 years</option>
+                </select>
+                <br/><br/>
+                <label>
+                    Gender: <br/>
+                    <input type="radio" name="giveGender" value="Male" required/> Male
+                </label>
+                <label>
+                    <input type="radio" name="giveGender" value="Female" /> Female
+                </label>
+                <br/>
+                <label>
+                    Gets along with other dogs/cats/children: <br/>
+                </label>
+                <label>
+                    <input type="radio" name="givegetalong" value="Yes" required /> Yes
+                </label>
+                <label>
+                    <input type="radio" name="givegetalong" value="No" /> No
+                </label>
+                <br/>
+                <p>Additional Comments:</p> 
+                <textarea id="ac" name="Comments" rows="10" cols="40"></textarea>
+            </div>  
+            <input type="submit" value="Submit" onclick="giveawayValidate()" />
+            <input type="reset" value="Clear" />
+            <br/><br/><br/>
+        </div>
+    </form>
+
+    
+    
+
+    <footer><a href="privacy.html">Privacy/Disclaimer</a></footer>
+    <script src = question8.js></script>
+
+</body>
+</html>
